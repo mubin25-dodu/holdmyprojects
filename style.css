@@ -1,0 +1,105 @@
+body{
+    background-color: antiquewhite;
+    color: rgba(77, 74, 74, 0.678);
+    font-family: 'Courier New', Courier, monospace;
+    
+    }
+    #heading2{
+        font-size: 30px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: rgba(77, 74, 74, 0.678);
+    
+    }
+    header{
+        text-align: center;
+        font-size: 30px;
+    }
+    #category{
+        padding-left: 50px;
+        font-size: 35px;
+    }
+    B{margin-left: 80px;
+        font-size: 30px;
+        color: rgba(39, 19, 133, 0.581);
+       
+    }
+pre{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 80px;
+}
+b:hover {
+    color: rgba(133, 19, 19, 0.581);
+    font-size: 110%;
+    
+}
+b:hover::after {
+    content: " Click me";
+    font-size: 90%;
+    color: rgb(255, 14, 14);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #heading2 {
+        font-size: 20px;
+    }
+    a {
+        font-size: 14px;
+    }
+    #category {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    b {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    pre {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    footer {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    #heading2 {
+        font-size: 16px;
+    }
+    a {
+        font-size: 12px;
+    }
+    #category {
+        font-size: 15px;
+
+    }
+    header {
+        font-size: 15px;
+        text-align: center;
+       
+
+    }
+    b {
+        font-size: 11px;
+   
+    }
+    pre {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+    footer {
+        font-size: 10px;
+        text-align: left;
+    }
+}
