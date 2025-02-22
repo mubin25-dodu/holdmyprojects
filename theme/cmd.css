@@ -23,8 +23,8 @@ color: antiquewhite;
 }
 b:hover::after {
     content: " Click me";
-    font-size: 90%;
-    color: lime;
+    font-size: 120%;
+    color: rgb(244, 76, 61);
 }
 
 #heading2{
@@ -51,8 +51,8 @@ pre{
     font-family: 'Courier New', Courier, monospace;
   
 }
-b:hover {
-    font-size: 110%;
+B:hover {
+    font-size: 120%;
 }
 
 @media screen and (max-width: 768px) {
