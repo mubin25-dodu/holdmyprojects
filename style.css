@@ -82,6 +82,7 @@ b:hover::after {
     }
     #category {
         font-size: 15px;
+        margin-left: -15px;
 
     }
     header {
@@ -92,11 +93,12 @@ b:hover::after {
     }
     b {
         font-size: 11px;
-   
+        
     }
     pre {
         font-size: 11px;
-        padding-left: 10px;
+       
+        margin-left: -15px;
     }
     footer {
         font-size: 10px;
