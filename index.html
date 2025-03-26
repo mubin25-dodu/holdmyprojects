@@ -9,19 +9,22 @@
     <meta name="keywords" content="Md Abdullah Al Mubin, portfolio, websites, games, software, projects">
     <meta name="author" content="Md Abdullah Al Mubin">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modern.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header>
         <h1>Welcome to my digital playground!</h1>
+        <button class="btn" onclick="toggleTheme()">Toggle Theme</button>
     </header>
     <main>
         <p>Choose Theme <a href="theme/old.html" id="css"> Old Web</a> -<a href="theme/cmd.html" id="cmd"> CMD</a></p>
-        <section>
+        <section style="animation: fadeIn 1.5s ease-in-out;">
             <p id="heading2">I’m Md Abdullah Al Mubin, and this site is where I showcase my creations. Take a look around and explore my work!</p>
         </section>
-        <section>
+        <section style="animation: fadeIn 2s ease-in-out;">
             <h2 id="category">Websites</h2>
            
             <a href="http://info.abdullahalmubin.me">
@@ -40,7 +43,7 @@
       ->Used: HTML, CSS
                 </pre>
         </section>
-        <section>
+        <section style="animation: fadeIn 2.5s ease-in-out;">
             <h2 id="category">Games</h2>
             <a href="http://late-again.abdullahalmubin.me">
                 <pre><b>Late-again!!</b></a>
@@ -51,7 +54,7 @@
       ->Used: OpenGL, C++
                 </pre>
         </section>
-        <section>
+        <section style="animation: fadeIn 3s ease-in-out;">
             <h2 id="category">Software</h2>
             <a href="http://aiub.abdullahalmubin.me">
                 <pre><b>AIUB Course Planner (life's 1st project)</b></a>
@@ -75,6 +78,48 @@
         <p>For more information, contact me at: <a href="mailto:mubin9516@gmail.com">mubin9516@gmail.com</a></p>
         <a href="https://www.facebook.com/abdullahalmubin69">Facebook</a> | <a href="https://github.com/mubin25-dodu">GitHub</a> | <a href="https://www.instagram.com/abdullahalmubin69/">Instagram</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        const themes = [
+            { background: "#1e1e2f", color: "#ffffff", particlesColor: "#ffffff" },
+            { background: "#0f2027", color: "#00c6ff", particlesColor: "#00c6ff" },
+            { background: "#232526", color: "#ff512f", particlesColor: "#ff512f" },
+            { background: "#141e30", color: "#f4f4f9", particlesColor: "#f4f4f9" }
+        ];
+
+        function toggleTheme() {
+            const theme = themes[Math.floor(Math.random() * themes.length)];
+            document.body.style.backgroundColor = theme.background;
+            document.body.style.color = theme.color;
+
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 100, density: { enable: true, value_area: 800 } },
+                    color: { value: theme.particlesColor },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5 },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: theme.particlesColor, opacity: 0.4, width: 1 },
+                    move: { enable: true, speed: 6 }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: true, mode: "grab" },
+                        onclick: { enable: true, mode: "push" }
+                    },
+                    modes: {
+                        grab: { distance: 140, line_linked: { opacity: 1 } },
+                        push: { particles_nb: 4 }
+                    }
+                },
+                retina_detect: true
+            });
+        }
+
+        // Initialize with the first theme
+        toggleTheme();
+    </script>
 </body>
 
 </html>

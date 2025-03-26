@@ -2,57 +2,89 @@ body {
     background-color: black;
     color: lime;
     font-family: 'Courier New', Courier, monospace;
+    animation: fadeIn 1s ease-in-out;
 }
 
 header, #heading2, #category, pre, footer {
     color: lime;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 a {
-    color: lime;
+    color: lime; /* Updated link color for CMD theme */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00ff00; /* Updated hover color for CMD theme */
+    text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.8);
 }
 
 b {
     color: lime;
-}
-#normal{
-color: antiquewhite;
-}
-#css{
- color: rgb(255, 255, 255);
-}
-b:hover::after {
-    content: " Click me";
-    font-size: 120%;
-    color: rgb(244, 76, 61);
+    transition: font-size 0.3s, color 0.3s;
 }
 
-#heading2{
+b:hover {
+    font-size: 120%;
+    color: #00ff00;
+}
+
+#normal {
+    color: antiquewhite;
+}
+
+#css {
+    color: rgb(255, 255, 255);
+}
+
+b::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 10%;
+    left: 0;
+    transition: width 0.3s;
+}
+
+b:hover::after {
+    width: 100%;
+}
+
+#heading2 {
     font-size: 30px;
     text-align: left;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-header{
+header {
     text-align: left;
     font-size: 30px;
 }
-#category{
 
+#category {
     font-size: 35px;
 }
-B{
+
+b {
     font-size: 30px;
 }
-pre{
+
+pre {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-  
 }
-B:hover {
-    font-size: 120%;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -67,15 +99,12 @@ B:hover {
     }
     #category {
         font-size: 25px;
- 
     }
     b {
         font-size: 20px;
-     
     }
     pre {
         font-size: 20px;
-   
     }
     footer {
         font-size: 12px;
@@ -95,21 +124,16 @@ B:hover {
     }
     #category {
         font-size: 15px;
-
     }
     header {
         font-size: 15px;
         text-align: left;
-       
-
     }
     b {
         font-size: 11px;
-   
     }
     pre {
         font-size: 11px;
-     
     }
     footer {
         font-size: 10px;
