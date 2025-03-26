@@ -1,11 +1,11 @@
 body {
-    background-color: #1e1e2f;
-    color: #ffffff;
+    background-color: #232526;
+    color: #a9a9a9;
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
     animation: fadeIn 1s ease-in-out;
-    overflow: hidden;
-    cursor: url('https://cdn.custom-cursor.com/packs/1234/cursor.png'), auto;
+    overflow-x: hidden;
+    cursor: auto;
 }
 
 header {
@@ -28,13 +28,13 @@ header {
 
 a {
     text-decoration: none;
-    color: #1abc9c; /* Updated link color for better visibility */
+    color: inherit !important;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #16a085; /* Updated hover color for better visibility */
-    text-shadow: 0px 0px 5px rgba(22, 160, 133, 0.8);
+    color: #2980b9 !important;
+    text-shadow: 0px 0px 5px rgba(5, 5, 5, 0.589);
 }
 
 #category {
@@ -49,14 +49,14 @@ a:hover {
 b {
     margin-left: 80px;
     font-size: 1.5em;
-    color: #ff512f;
+    color: inherit;/* Updated color */
     transition: color 0.3s, font-size 0.3s;
 }
 
 b:hover {
-    color: #ff784f;
+    color: #c0c0c0;
     font-size: 1.6em;
-    text-shadow: 0px 0px 5px rgba(255, 59, 59, 0.8);
+    text-shadow: 0px 0px 5px rgba(83, 32, 32, 0.8);
 }
 
 pre {
@@ -68,7 +68,7 @@ pre {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     animation: fadeIn 3s ease-in-out;
     color: inherit;
@@ -109,7 +109,6 @@ button.btn:hover {
     }
 }
 
-/* Particle effect */
 body::before {
     content: '';
     position: absolute;
@@ -122,9 +121,8 @@ body::before {
     z-index: -1;
 }
 
-/* Particle container */
 #particles-js {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -154,7 +152,7 @@ body::before {
     }
     footer {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
     }
 }
 

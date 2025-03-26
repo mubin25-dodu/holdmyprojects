@@ -22,7 +22,7 @@ header {
 
 a {
     text-decoration: none;
-    color: #3498db; /* Updated link color for modern theme */
+    color: #ffffff; /* Updated link color for modern theme */
     transition: color 0.3s;
 }
 
@@ -58,7 +58,7 @@ pre {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     animation: fadeIn 3s ease-in-out;
 }
@@ -122,7 +122,7 @@ button.btn:hover {
     }
     footer {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
     }
 }
 
