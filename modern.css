@@ -1,62 +1,53 @@
 body {
-    background-color: #232526;
-    color: #a9a9a9;
+    background-color: #f0f0f0;
+    color: #333;
     font-family: 'Arial', sans-serif;
     transition: background-color 0.3s, color 0.3s;
     animation: fadeIn 1s ease-in-out;
-    overflow-x: hidden;
-    cursor: auto;
 }
 
 header {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     margin-top: 20px;
     animation: slideDown 1s ease-in-out;
-    color: inherit;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #heading2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
     margin: 20px 0;
     animation: fadeIn 1.5s ease-in-out;
-    color: inherit;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 a {
     text-decoration: none;
-    color: inherit !important;
+    color: #ffffff; /* Updated link color for modern theme */
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #2980b9 !important;
-    text-shadow: 0px 0px 5px rgba(5, 5, 5, 0.589);
+    color: #2980b9; /* Updated hover color for modern theme */
+    text-shadow: 0px 0px 5px rgba(41, 128, 185, 0.8);
 }
 
 #category {
     padding-left: 50px;
-    font-size: 2em;
+    font-size: 1.75em;
     margin-top: 20px;
     animation: fadeIn 2s ease-in-out;
-    color: inherit;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 b {
     margin-left: 80px;
-    font-size: 1.5em;
-    color: inherit;/* Updated color */
+    font-size: 1.25em;
+    color: #271385;
     transition: color 0.3s, font-size 0.3s;
 }
 
 b:hover {
-    color: #c0c0c0;
-    font-size: 1.6em;
-    text-shadow: 0px 0px 5px rgba(83, 32, 32, 0.8);
+    color: #851313;
+    font-size: 1.35em;
 }
 
 pre {
@@ -64,18 +55,16 @@ pre {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 80px;
     animation: fadeIn 2.5s ease-in-out;
-    color: inherit;
 }
 
 footer {
     text-align: left;
     margin-top: 20px;
     animation: fadeIn 3s ease-in-out;
-    color: inherit;
 }
 
 button.btn {
-    background-color: #00c6ff;
+    background-color: #007BFF;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -85,7 +74,7 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: #00a3cc;
+    background-color: #0056b3;
     transform: scale(1.1);
 }
 
@@ -107,25 +96,6 @@ button.btn:hover {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/cubes.png');
-    opacity: 0.2;
-    z-index: -1;
-}
-
-#particles-js {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
